@@ -77,7 +77,7 @@ function convert_jsonfeed_to_rss($content = NULL, $max = NULL)
     return $dom->saveXML();
 }
 
-$cari = "http://nhtai-api.glitch.me/api/search?query=".$q;
+$cari = "https://nhentai-api.glitch.me/api/search?query=".$q;
 $content = @file_get_contents($cari);
 header('Content-type: application/xml');
 echo convert_jsonfeed_to_rss($content)."\n";}
