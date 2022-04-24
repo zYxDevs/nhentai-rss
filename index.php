@@ -76,6 +76,6 @@ function convert_jsonfeed_to_rss($content = NULL, $max = NULL)
 }
 
 
-$content = @file_get_contents("http://nhtai-api.glitch.me/api/search");
+$content = @file_get_contents("https://nhentai-api.glitch.me/api/search");
 header('Content-type: application/xml');
 echo convert_jsonfeed_to_rss($content)."\n";
